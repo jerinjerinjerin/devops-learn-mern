@@ -6,7 +6,6 @@ import AddTaskDialog from './components/AddTaskDialog';
 import LoadingSpinner from './components/LoadingSpinner';
 import { taskService } from './services/taskService';
 
-console.log('backend url', import.meta.env.VITE_API_URL)
 
 function App() {
   const [tasks, setTasks] = useState([]);
