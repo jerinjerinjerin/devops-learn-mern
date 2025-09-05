@@ -6,7 +6,6 @@ import AddTaskDialog from './components/AddTaskDialog';
 import LoadingSpinner from './components/LoadingSpinner';
 import { taskService } from './services/taskService';
 
-const jerin = 'unused variable here';
 
 function App() {
   const [tasks, setTasks] = useState([]);
