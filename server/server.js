@@ -12,9 +12,14 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',                 // for local dev
+    'http://100.25.153.34:5173',             // if using Vite preview
+    'http://100.25.153.34'                   // if serving via Nginx on port 80
+  ],
   credentials: true
 }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
